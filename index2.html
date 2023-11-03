@@ -4,80 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>course Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>book store Website</title>
+    <link rel="stylesheet" href="style2.css" />
+    <script
+      src="https://kit.fontawesome.com/7a4b62b0a4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    
-    <div class="container">
-      <div class="box" id="box-1"> <img
-        class="grid-image"
-        src="i2.jpeg"
-        alt="image 1"
-        width="400" height="300" style="margin:10px10px10px10px"
-      />
-      <p align="center"><b>DSA with PYTHON lec-350 Rs5500</b></p></div>
+    </div>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php" align="center">
       
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <form action="">
-                <h1>
-                    <i class="fas fa-shipping-fast"></i>
-                    Shipping Details
-                </h1>
-                <div class="name">
-                    <div>
-                        <label for="f-name">First</label>
-                        <input type="text" name="f-name">
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="phone no."><i class="fa fa-mobile"></i>phone no.</label>
+                  <input type="text" id="phone no." name="phone no." placeholder="">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="New York">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="NY">
                     </div>
-                    <div>
-                        <label for="l-name">Last</label>
-                        <input type="text" name="l-name">
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001">
                     </div>
+                  </div>
                 </div>
-                <div class="street">
-                    <label for="name">Street</label>
-                    <input type="text" name="address">
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <a href="indexcc.html"><i class="fa fa-cc-visa" style="color:navy;"></i></a>
+                    <a href=""><i class="fa fa-paypal" style="color:blue;"></i></a>
+                    <a href="indexcc.html"><i class="fa fa-cc-mastercard" style="color:red;"></i></a>
+                    <a href=""><i class="fa fa-google-wallet" style="color:orange;"></i></a>
+                 
+                  </div>
                 </div>
-                <div class="address-info">
-                    <div>
-                        <label for="city">City</label>
-                        <input type="text" name="city">
-                    </div>
-                    <div>
-                        <label for="state">State</label>
-                        <input type="text" name="state">
-                    </div>
-                    <div>
-                        <label for="zip">Zip</label>
-                        <input type="text" name="zip">
-                    </div>
-                </div>
-                <h1>
-                    <i class="far fa-credit-card"></i> Payment Information
-                </h1>
-                <div class="cc-num">
-                    <label for="card-num">Credit Card No.</label>
-                    <input type="text" name="card-num">
-                </div>
-                <div class="cc-info">
-                    <div>
-                        <label for="card-num">Exp</label>
-                        <input type="text" name="expire">
-                    </div>
-                    <div>
-                        <label for="card-num">CCV</label>
-                        <input type="text" name="security">
-                    </div>
-                </div>
-                <div class="btns">
-                    <button><a href="thnku.html">Purchase</a></button>
-                    <button><a href="index1.html">home page</a></button>
-                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
             </form>
+          </div>
         </div>
-    </div>
-    
-  </body>
-</html>
+      </div>
+    </body>
+</html
